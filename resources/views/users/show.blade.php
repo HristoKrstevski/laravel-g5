@@ -6,7 +6,7 @@
    </div>
 
     <div class="row">
-        <form action="{{route('users.destroy',$user->id }}" method="post">
+        <form action="{{route('users.destroy',$user->id) }}" method="post">
             @csrf
             @method('delete')
             <button type = "submit" class="btn btn-danger">Delete User</button>
