@@ -63,7 +63,7 @@ class UserController extends Controller
     public function update (Request $request, User $user)
     {
         $input = $request->all();
-        if($request->has('password') && $request !empty($request ->get('password')))
+        if($request->has('password') && !empty($request ->get('password')))
         {
             $input ['password'] = $request->get('password');
         } else {
